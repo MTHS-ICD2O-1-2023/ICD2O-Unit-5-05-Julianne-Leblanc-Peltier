@@ -1,4 +1,41 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
+/* Created by: Julianne Leblanc-Peltier
+* Created on: April 2024
 * This file contains the CSS for index.html
 */
+
+body {
+  background-image: url("../images/triangle.jpg");
+  background-size: cover;
+  background-color: rgb(255 238 192);
+}
+
+.name-title {
+  font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: rgb(208, 2, 143);
+  font-weight: 300;
+  text-align: center;
+}
+
+.innerbody {
+  background-color: rgb(250 250 250);
+  width: 500px;
+  padding: 10px;
+  border: 5px solid rgb(105, 2, 208);
+  margin: 20px auto;
+}
+
+.content {
+  padding: 1%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
