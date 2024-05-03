@@ -2,10 +2,7 @@
 <html lang="en-ca">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Julianne's Burgers: Assignment 4, in JS"
-    />
+    <meta name="description" content="Identifying Triangles, in JS" />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Julianne Leblanc-Peltier" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,12 +11,15 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <title>Julianne's Burgers: Assignment 4, in JS</title>
+    <title>Identifying Triangles, in JS</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -27,54 +27,83 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title"
-            >Julianne's Burgers: Assignment 4, in JS</span
-          >
+          <span class="mdl-layout-title">Identifying Triangles, in JS</span>
         </div>
       </header>
       <div class="content">
-        <div class="innerbody">
-          <br />
-          <div>
-            <h2 class="name-title">Angles & Triangles</h2>
+        <div class="row">
+          <div class="column">
+            <div class="innerbody">
+              <h6>
+                Fill out the below information to know if your triangle is
+                scalene, equilateral, or isosceles!
+              </h6>
+              Input side lengths below:
+              <!-- Numeric Textfield -->
+              <form action="#">
+                Enter length A of the triangle
+                <div class="mdl-textfield mdl-js-textfield">
+                  <input
+                    class="mdl-textfield__input"
+                    type="text"
+                    pattern="-?[0-9]*(\.[0-9]+)?"
+                    id="length-a-of-triangle"
+                  />
+                  <label class="mdl-textfield__label" for="length-a-of-triangle"
+                    >Length (mm)</label
+                  >
+                  <span class="mdl-textfield__error"
+                    >Input is not a number!</span
+                  >
+                </div>
+                Enter length B of the triangle
+                <div class="mdl-textfield mdl-js-textfield">
+                  <input
+                    class="mdl-textfield__input"
+                    type="text"
+                    pattern="-?[0-9]*(\.[0-9]+)?"
+                    id="length-b-of-triangle"
+                  />
+                  <label class="mdl-textfield__label" for="length-b-of-triangle"
+                    >Length (mm)</label
+                  >
+                  <span class="mdl-textfield__error"
+                    >Input is not a number!</span
+                  >
+                </div>
+                Enter length C of the triangle
+                <div class="mdl-textfield mdl-js-textfield">
+                  <input
+                    class="mdl-textfield__input"
+                    type="text"
+                    pattern="-?[0-9]*(\.[0-9]+)?"
+                    id="length-c-of-triangle"
+                  />
+                  <label class="mdl-textfield__label" for="length-c-of-triangle"
+                    >Length (mm)</label
+                  >
+                  <span class="mdl-textfield__error"
+                    >Input is not a number!</span
+                  >
+                </div>
+                <!-- Accent-colored raised button with ripple -->
+                <br />
+                <br />
+                <button
+                  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                  type="button"
+                  onclick="myButtonClicked()"
+                >
+                  Done
+                </button>
+              </form>
+              <br />
+              <div id="type-of-triangle"></div>
+            </div>
           </div>
-          <h6>
-            Fill out the below information to know if your triangle is scalene, equilateral, or isosceles!
-          </h6>
-          Input side lengths below:
-          <!-- Numeric Textfield -->
-          <form action="#">
-            Enter length A of the triangle
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length-a-of-triangle">
-              <label class="mdl-textfield__label" for="length-a-of-triangle">Length (mm)</label>
-              <span class="mdl-textfield__error">Input is not a number!</span>
-            </div>
-            Enter length B of the triangle
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length-b-of-triangle">
-              <label class="mdl-textfield__label" for="length-b-of-triangle">Length (mm)</label>
-              <span class="mdl-textfield__error">Input is not a number!</span>
-            </div>
-            Enter length C of the triangle
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length-c-of-triangle">
-              <label class="mdl-textfield__label" for="length-c-of-triangle">Length (mm)</label>
-              <span class="mdl-textfield__error">Input is not a number!</span>
-            </div>
-            <!-- Accent-colored raised button with ripple -->
-            <br />
-            <br />
-            <button
-              class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-              type="button"
-              onclick="myButtonClicked()"
-            >
-              Done
-            </button>
-          </form>
-          <br />
-          <div id="type-of-triangle"></div>
+          <div class="column">
+            <img src="./images/triangles.png" />
+          </div>
         </div>
       </div>
     </div>
