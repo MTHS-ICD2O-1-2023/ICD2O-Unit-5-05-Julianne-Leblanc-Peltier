@@ -17,13 +17,13 @@ function myButtonClicked() {
   const angleC = Math.acos((lengthA ** 2 + lengthB ** 2 - lengthC ** 2) / (2 * lengthA * lengthB)) * (180 / Math.PI)
 
   // sum of angles to determine whether it is a triangle
-  const sumOfAngles = parseInt((angleA).toFixed(2)) + parseInt((angleB).toFixed(2)) + parseInt((angleC).toFixed(2))
+  const sumOfAngles = Number((angleA).toFixed(2)) + Number((angleB).toFixed(2)) + Number((angleC).toFixed(2))
 
   if (sumOfAngles == 180){
-    if (angleA = angleB = angleC) {
+    if (angleA == angleB == angleC) {
       // equilateral
       document.getElementById("type-of-triangle").innerHTML = "This is an equilateral triangle!"
-    } else if ((angleA = angleC) || (angleA = angleB) || (angleB = angleC)) {
+    } else if ((angleA == angleC) || (angleA == angleB) || (angleB == angleC)) {
       // isosceles triangle
       document.getElementById("type-of-triangle").innerHTML = "This is an isosceles triangle!"
     } else {
