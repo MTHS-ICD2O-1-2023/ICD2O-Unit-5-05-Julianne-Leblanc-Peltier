@@ -19,7 +19,7 @@ function myButtonClicked() {
   // sum of angles to determine whether it is a triangle
   const sumOfAngles = parseInt((angleA).toFixed(2)) + parseInt((angleB).toFixed(2)) + parseInt((angleC).toFixed(2))
 
-  if (sumOfAngles = 180){
+  if (sumOfAngles == 180){
     if (angleA = angleB = angleC) {
       // equilateral
       document.getElementById("type-of-triangle").innerHTML = "This is an equilateral triangle!"
