@@ -1,11 +1,47 @@
 <mxfile host="65bd71144e">
     <diagram id="HIP3nbAZw_EuaXWnEj3U" name="Page-1">
-        <mxGraphModel dx="399" dy="236" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="866" dy="683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="7" value="http://ics2o.mths.ca" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="7" value="http://ics2o.mths.ca" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="40" y="40" width="760" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;" vertex="1" parent="7">
+                    <mxGeometry x="30" y="60" width="400" height="380" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;div&gt;Fill out the below information to know if your triangle is scalene, equilateral, or isosceles!&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=3;" vertex="1" parent="7">
+                    <mxGeometry x="50" y="90" width="260" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;div&gt;Input side lengths below:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=3;" vertex="1" parent="7">
+                    <mxGeometry x="50" y="130" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Enter length A of the triangle&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=3;" vertex="1" parent="7">
+                    <mxGeometry x="40" y="170" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Enter length B of the triangle&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=3;" vertex="1" parent="7">
+                    <mxGeometry x="40" y="215" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Enter length C of the triangle&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=3;" vertex="1" parent="7">
+                    <mxGeometry x="40" y="270" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Done" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=none;" vertex="1" parent="7">
+                    <mxGeometry x="50" y="330" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="3" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=none;" vertex="1" parent="7">
+                    <mxGeometry x="220" y="130" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="4" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=none;" vertex="1" parent="7">
+                    <mxGeometry x="220" y="170" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="5" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=none;" vertex="1" parent="7">
+                    <mxGeometry x="220" y="215" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://urban-space-invention-5gq96ggjq6753477-5500.app.github.dev/images/triangles.png;" vertex="1" parent="7">
+                    <mxGeometry x="470" y="145.07" width="250" height="169.85" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;div&gt;This is a scalene triangle!&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;" vertex="1" parent="7">
+                    <mxGeometry x="60" y="390" width="150" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
