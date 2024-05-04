@@ -20,7 +20,7 @@ function myButtonClicked() {
   const sumOfAngles = Number((angleA).toFixed(2)) + Number((angleB).toFixed(2)) + Number((angleC).toFixed(2))
 
   if (sumOfAngles == 180){
-    if (angleA == angleB == angleC) {
+    if ((angleA == angleB) && (angleB == angleC)) {
       // equilateral
       document.getElementById("type-of-triangle").innerHTML = "This is an equilateral triangle!"
     } else if ((angleA == angleC) || (angleA == angleB) || (angleB == angleC)) {
